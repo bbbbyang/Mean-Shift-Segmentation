@@ -1,6 +1,8 @@
 #### Mean Shift Segmentation
 Author        : Bingyang Liu
 
+For details tutorial of Meash Shift Segmentation, please check [my blog][2].
+
 [Mean Shift Segmentation][1] should have three steps:
 
 - Filtering (Mode Searching)
@@ -46,4 +48,4 @@ and other one is flood filled algorithm (Region Growing).
 [Mean Shift: A Robust Approach Toward Feature Space Analysis][1]
 
 [1]:https://courses.csail.mit.edu/6.869/handouts/PAMIMeanshift.pdf
-
+[2]:https://bbbbyang.github.io/2018/03/19/Mean-Shift-Segmentation/
