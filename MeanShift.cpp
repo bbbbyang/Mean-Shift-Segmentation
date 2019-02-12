@@ -250,7 +250,7 @@ void MeanShift::MSSegmentation(Mat& Img){
 					for(int k = 0; k < 8; k++){
 						int hx = Pt.x + dxdy[k][0];
 						int hy = Pt.y + dxdy[k][1];
-						if((hx > 0) && (hy > 0) && (hx < ROWS) && (hy < COLS) && (Labels[hx][hy] < 0)){
+						if((hx >= 0) && (hy >= 0) && (hx < ROWS) && (hy < COLS) && (Labels[hx][hy] < 0)){
 							Point5D P;
 							P.MSPOint5DSet(hx, hy, (float)IMGChannels[0].at<uchar>(hx, hy), (float)IMGChannels[1].at<uchar>(hx, hy), (float)IMGChannels[2].at<uchar>(hx, hy));
 							P.PointLab();
